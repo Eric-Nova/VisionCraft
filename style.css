@@ -1,0 +1,433 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(./Gilroy-Medium.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #EEEEEE;
+}
+
+#page1 {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: rgb(242, 172, 8); */
+    padding: 2vh 3vw;
+    padding-top: 22vh;
+    /* background-color: antiquewhite; */
+}
+
+.navbar {
+    height: 15vh;
+    width: 100%;
+    background-color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: fixed;
+    z-index: 99;
+    overflow: hidden;
+}
+
+.navbar img {
+    height: 15vh;
+}
+
+.navbar .nav {
+    height: 15vh;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2%;
+    font-family: 'Gilroy';
+    font-size: 15px;
+}
+
+#heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+#heading #your {
+    /* padding-left: 4.5vw ; */
+    margin-right: 10%;
+}
+
+#page1 h1 {
+    font-size: 12vw;
+    text-transform: uppercase;
+    line-height: 12vw;
+    letter-spacing: -1px;
+    padding-left: 4.5vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.videoBox {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.videobox video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page2 {
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 3vh;
+    /* background-color: azure; */
+}
+
+#page2 .elem {
+    height: 90vh;
+    width: 30%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 .elem img {
+    height: 100%;
+    width: 100%;
+    scale: 1;
+    object-fit: cover;
+
+    /* border:1px solid black; */
+}
+
+#page2 .elem .details {
+    height: 3.5vw;
+    border-radius: 50px;
+    width: 20%;
+    position: absolute;
+    z-index: 9;
+    background-color: #EEEEEE;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.details h1 {
+    font-size: 1vw;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.details p {
+    text-transform: uppercase;
+}
+
+.bgDets {
+    width: 20%;
+    height: 19vw;
+    background-color: #EEEEEE;
+    position: absolute;
+    opacity: 0;
+    margin-top: 16vw;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.bgDets h2 {
+    padding-top: 5vw;
+}
+
+
+#cursor {
+    height: 40vh;
+    width: 20vw;
+    background-color: #ffff;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+
+#page3 {
+    min-height: 120vh;
+    width: 100%;
+    /* background-color: azure; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding-top: -4vh; */
+    padding: 4vh 0;
+
+    flex-wrap: wrap;
+}
+
+.child {
+    height: 80vh;
+    width: 30vw;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-left: 7vw;
+    margin-bottom: -3vw;
+    padding: 2vh 0;
+    flex-direction: column;
+}
+
+.child h2 {
+    font-size: 1vw;
+    margin-bottom: 4vw;
+    /* padding: 1vw 0; */
+}
+
+.child img {
+    height: 70%;
+    /* border: 1px solid #000; */
+}
+
+#imapct {
+    height: 100vh;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+    justify-content: space-between;
+    padding: 3vh 4vh;
+}
+
+.text {
+    width: 30%;
+    margin-right: 10vw;
+
+}
+
+.text p {
+    padding-top: 1vw;
+    line-height: 2vw;
+}
+
+#impImg {
+    width: 70%;
+    height: 90%;
+    /* background-color: thistle; */
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#impImg img {
+    width: 100%;
+    height: 100%;
+    padding: 0 1vw;
+
+}
+
+
+@media (max-width:763px) {
+    .navbar {
+        justify-content: baseline;
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .navbar .nav {
+        /* height: 100px; */
+        min-width: 67%;
+        /* background-color: burlywood;
+        z-index: 99; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        font-size: 2vw;
+        padding: 0 2vw;
+        margin-right: 6vw;
+    }
+
+    #page1 {
+        /* background-color: red; */
+        min-height: 70vh;
+        width: 100%;
+        padding: 0 1vw;
+        padding-top: 25vh;
+
+    }
+
+    #page1 h1 {
+        font-size: 15.5vw;
+        letter-spacing: -3px;
+        line-height: 18vw;
+    }
+
+    .videoBox {
+        height: 30vh;
+        width: 100%;
+        margin-top: 3vh;
+    }
+
+    #page2 {
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 5vw 3vw;
+        flex-direction: column;
+        justify-content: space-between;
+        /* background-color: red; */
+    }
+
+    #page2 .elem {
+        height: 90vh;
+        width: 95%;
+        /* background-color: red; */
+        overflow: hidden;
+        margin-bottom: 3vw;
+    }
+
+    #page2 .elem .details {
+        min-height: 7vw;
+        min-width: 50%;
+    }
+
+    .details h1 {
+        font-size: 2.5vw;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .details p {
+        text-transform: uppercase;
+        font-size: 3vw;
+    }
+
+    .details i {
+        font-size: 1.5vh;
+    }
+
+    #page2 .elem .bgDets {
+        width: 50%;
+        height: 22vh;
+        margin-top: 22vh;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .bgDets h2 {
+        padding-top: 5vw;
+        background-color: rgba(238, 238, 238, 0.3);
+        backdrop-filter: (100%);
+        font-size: 5vw;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+
+    }
+
+    .bgDets p {
+        background-color: rgba(238, 238, 238, 0.3);
+        font-size: 3vw;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    #page3 {
+        min-height: 60vh;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        /* background-color: bisque; */
+    }
+
+    .child {
+        height: 24vh;
+        width: 40vw;
+        /* background-color: red; */
+        /* border: 2px solid #000; */
+        position: relative;
+        /* padding: 4vw; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .child h2 {
+        font-size: 2vw;
+        margin-bottom: -7vw;
+    }
+
+    .child img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        margin: 0 2vw;
+
+    }
+
+    #imapct {
+        min-height: 100vh;
+        width: 100%;
+        /* background-color: yellow; */
+        display: flex;
+        /* flex-direction: column;
+            align-items: center; */
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 3vh 4vh;
+    }
+
+    .text {
+        width: 100%;
+        margin-right: 10vw;
+
+    }
+
+    .text p {
+        padding-top: 1vw;
+        line-height: 7vw;
+    }
+
+    #impImg {
+        width: 50%;
+        height: 90%;
+        /* background-color: thistle; */
+        object-fit: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #impImg img {
+        width: 100%;
+        height: 100%;
+        padding: 0 1vw;
+
+    }
+
+}
